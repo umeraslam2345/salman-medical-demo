@@ -1,0 +1,89 @@
+/* Service  Area css
+============================================================================================ */
+
+
+.card-service{
+	padding: 40px 35px;
+	border: 0;
+	border-radius: 0;
+	background: #fff;
+	border: 1px solid $border;
+	z-index: 22;
+	position: relative;
+	@include transition;
+
+	&__icon{
+		margin-bottom: 12px;
+		height: 72px;
+		width: 72px;
+		background: #ecf0f8;
+		display: inline-block;
+		text-align: center;
+		line-height: 72px;
+		border-radius: 51px;
+		margin-bottom: 32px;
+
+		i{
+			color: #43464e;
+		}
+	}
+
+	&__title{
+		font-size: 20px;
+		font-weight: 600;
+		color: #33363e;
+		border-top: 1px solid $border;
+		padding-top: 26px;
+		margin-bottom: 16px;
+	}
+
+	&__subtitle{
+		margin-bottom: 0;
+		color: $pfont;
+		margin-bottom: 24px
+	}
+	&__link{
+		font-size: 15px;
+		font-family: $headingFont;
+		color: #33363e;
+		letter-spacing: 1.5px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -14px;
+			height: 2px;
+			width: 40px;
+			background: #33363e;
+		}
+		&:hover{
+			&:after{
+				width: 100%;
+				background: $baseColor;
+				@include transition;
+			}
+		}
+	}
+
+}
+.area-heading{
+	margin-bottom: 60px;
+
+	h3{
+		font-size: 36px;
+		color: $heading;
+		position: relative;
+	}
+	p{
+		font-size: 14px;
+		color: $pfont;
+		padding-left: 40px;
+		margin-top: 5px;
+		@media (max-width: 1199px){
+			padding-left: 0;
+
+		}
+	}
+
+}

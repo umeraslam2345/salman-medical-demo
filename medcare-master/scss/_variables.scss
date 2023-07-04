@@ -1,0 +1,37 @@
+/*font Variables*/
+$headingFont: 'Playfair Display', serif;
+$paraFont: 'Open Sans', sans-serif;
+
+
+/*Color Variables*/
+$baseColor: #0051d2;
+$baseColorLight: #ec473a;
+$dip: #020a21;
+$heading: #33363e;
+$pfont: #797979; 
+$white: #fff;
+$bg_one: #f7f7f7;
+$title-color: #2a2a2a;
+$border: #e8edf1;
+
+
+
+/*=================== fonts ====================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Playfair+Display:400,700');
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+	transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+
+

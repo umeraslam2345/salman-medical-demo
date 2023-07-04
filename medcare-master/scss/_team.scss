@@ -1,0 +1,76 @@
+
+/* Team section start
+============================================================================================ */
+.card-team{
+    border: 0;
+    border-radius: 0;
+    @include transition;
+    @media (max-width: 991px){
+        margin-bottom: 30px;
+
+    }
+
+    &__body{
+        border: 1px solid $border;
+        border-top: 0;
+        padding: 28px 30px 6px;
+        @include transition;
+        @media (max-width: 1199px){
+                padding: 28px 20px 6px;
+            }
+
+        h3{
+            font-size: 20px;
+            margin-bottom: 3px;
+
+            a{
+                color: $title-color;
+            }
+        }
+
+        p{
+            margin-bottom: 26px;
+        }
+    }
+
+    &__social{
+        float: right;
+
+        li{
+            display: inline-block;
+            margin-right: 14px;
+            @media (max-width: 1199px){
+                margin-right: 10px;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            a{
+                color: #777884;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+
+    &:hover{
+        background: $white;
+    }
+    .team-footer{
+        padding-top: 18px;
+        border-top: 1px solid $border;
+        .dn_btn{
+            font-size: 14px;
+            color: $pfont;
+            i{
+                margin-right: 9px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+/* Team section end
+============================================================================================ */

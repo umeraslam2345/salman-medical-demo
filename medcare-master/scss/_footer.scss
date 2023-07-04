@@ -1,0 +1,150 @@
+/*============== footer-area css ===============*/
+
+
+
+.footer-area {
+    .single-footer-widget {
+      @media (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+      h4 {
+        color: $heading;
+        margin-bottom: 30px;
+        @media (max-width: 1024px) {
+          font-size: 20px;
+        }
+        @media (max-width: 991px) {
+          margin-bottom: 15px;
+        }
+      }
+      ul {
+        padding-left: 0;
+        li {
+          margin-bottom: 8px;
+          list-style: none;
+          a {
+            @include transition();
+            color: $pfont;
+            &:hover {
+              color: $baseColor;
+            }
+          }
+        }
+      }
+      .form-wrap {
+        margin-top: 25px;
+
+      }
+      input {
+        height: 50px;
+        border: none;
+        width: 80% !important;
+        font-weight: 300;
+        border: 1px solid $border;
+        color: $pfont;
+        border-radius: 0;
+        font-size: 14px;
+        padding: 10px;
+        padding-left: 20px;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      .click-btn {
+      	height: 50px;
+        background: $baseColor;
+        color: $white;
+        border-radius: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 8px 20px;
+    
+        font-size: 15px;
+        text-transform: capitalize;
+        font-weight: 500;
+        border: 0;
+        @include transition();
+        span {
+          font-weight: 500;
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        &:hover {
+          background-position: right center;
+        }
+      }
+    }
+    .footer-bottom {
+      margin-top: 85px;
+      padding: 30px 0;
+      border-top: 1px solid $border;
+      @media (max-width: 991px) {
+        margin-top: 20px;
+        text-align: center;
+      }
+      a {
+        color: $baseColor;
+      }
+      .footer-social {
+        text-align: right;
+        a {
+          background: $heading;
+          width: 30px;
+          display: inline-table;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          @include transition();
+          &:hover {
+            background: $baseColor;
+            i {
+              color: $white;
+            }
+          }
+        }
+        i {
+          color: #cccccc;
+          @include transition();
+        }
+        @media (max-width: 991px) {
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  
+
+@media (max-width: 991px){
+	.header_area .navbar-collapse {
+		padding: 15px 0px;
+	}
+}
+@media (max-width: 767px){
+
+	.home_banner_area .banner_inner .banner_content span::after {
+		display: none;
+	}
+	.home_banner_area .banner_inner .banner_content h3 {
+		font-size: 33px;
+	}
+	.home_banner_area .banner_inner .banner_content h3 br{
+		display: none;
+	}
+	.home_banner_area .banner_inner .banner_content .main_btn {
+		margin-top: 14px;
+	}
+	.home_banner_area .banner_inner .banner_content span {
+		font-size: 15px;
+		margin-bottom: 6px;
+	}
+	.footer-area {
+		padding-top: 70px;
+	}
+	.footer-bottom {
+		margin-top: 35px;
+	}
+}
