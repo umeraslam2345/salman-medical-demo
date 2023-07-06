@@ -1,0 +1,104 @@
+/*---------------------
+  Pricing
+-----------------------*/
+.pricing {
+    padding-bottom: 60px;
+}
+
+.pricing__item {
+    text-align: center;
+    background: $white-color;
+    box-shadow: 0px 5px 15px rgba(0, 61, 85, 0.1);
+    padding: 0 0 50px;
+    @include transition(all, .5s);
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    &:hover {
+        box-shadow: 0px 5px 35px rgba(0, 61, 85, 0.15);
+        margin-top: -20px;
+        padding-bottom: 70px;
+
+        .pricing__item__title {
+            background: $primary-color;
+            padding-top: 62px;
+
+            p {
+                color: $white-color;
+            }
+
+            h3 {
+                color: $white-color;
+
+                span {
+                    color: $white-color;
+                }
+            }
+        }
+
+        .primary-btn {
+            background: $primary-color;
+            color: $white-color;
+        }
+    }
+
+    ul {
+        margin-bottom: 42px;
+        margin-top: 50px;
+
+        li {
+            list-style: none;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            h6 {
+                font-size: 15px;
+                color: #888888;
+                margin-bottom: 5px;
+            }
+
+            span {
+                font-size: 15px;
+                color: $heading-color;
+                display: block;
+            }
+        }
+    }
+
+    .primary-btn {
+        @include transition(all, .5s);
+    }
+}
+
+.pricing__item__title {
+    background: #f2f7f8;
+    padding: 42px 0;
+    border-radius: 10px 10px 0 0;
+    @include transition(all, .5s);
+
+    p {
+        color: $heading-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        @include transition(all, .3s);
+    }
+
+    h3 {
+        color: $primary-color;
+        font-weight: 700;
+        @include transition(all, .3s);
+
+        span {
+            color: $heading-color;
+            font-weight: 500;
+            display: block;
+            font-size: 15px;
+            margin-top: 12px;
+            @include transition(all, .3s);
+        }
+    }
+}

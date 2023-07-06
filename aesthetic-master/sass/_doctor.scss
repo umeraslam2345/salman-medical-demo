@@ -1,0 +1,86 @@
+/*---------------------
+  Doctor
+-----------------------*/
+.doctor__item {
+  padding-bottom: 65px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 65px;
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.doctor__item__pic {
+  text-align: center;
+
+  img {
+    height: 470px;
+    width: 470px;
+    border-radius: 50%;
+    border: 10px solid $white-color;
+    box-shadow: 0px 3px 10px rgba(48, 68, 78, 0.2);
+  }
+}
+
+.doctor__item__text {
+  padding-top: 25px;
+
+  &.doctor__item__text--left {
+    text-align: right;
+  }
+
+  span {
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    color: $heading-color;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin-bottom: 30px;
+
+    li {
+      list-style: none;
+      font-size: 15px;
+      color: #666666;
+      line-height: 36px;
+
+      i {
+        color: $primary-color;
+        font-size: 15px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.doctor__item__social {
+
+  a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #f2f7f8;
+    font-size: 18px;
+    color: $heading-color;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

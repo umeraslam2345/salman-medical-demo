@@ -1,0 +1,168 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+  padding-bottom: 0;
+
+  .container {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.about__video {
+  height: 366px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .play-btn {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: $primary-color;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: $white-color;
+  }
+}
+
+.about__text {
+  padding-left: 20px;
+
+  .section-title {
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  ul {
+    margin-bottom: 25px;
+
+    li {
+      list-style: none;
+      font-size: 15px;
+      color: #666666;
+      line-height: 36px;
+
+      i {
+        color: $primary-color;
+        font-size: 15px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+/*---------------------
+  Testimonials
+-----------------------*/
+.testimonials {
+  overflow: hidden;
+  background: #f2f7f8;
+  padding-bottom: 90px;
+
+  .section-title {
+    margin-bottom: 15px;
+  }
+}
+
+.testimonial__item {
+  background: $white-color;
+  box-shadow: 0px 5px 20px rgba(0, 61, 85, 0.1);
+  border-radius: 10px;
+  position: relative;
+  padding: 40px 40px 30px 40px;
+
+  .rating {
+    position: absolute;
+    right: 40px;
+    top: 52px;
+
+    i {
+      font-size: 13px;
+      color: #e4c870;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+}
+
+.testimonial__author {
+  overflow: hidden;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+}
+
+.testimonial__author__icon {
+  height: 50px;
+  width: 50px;
+  background: $primary-color;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  color: $white-color;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.testimonial__author__text {
+  overflow: hidden;
+  padding-top: 4px;
+
+  h5 {
+    color: $heading-color;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 13px;
+    color: #888888;
+  }
+}
+
+.testimonial__slider {
+
+  .col-lg-6 {
+    max-width: 100%;
+  }
+
+  &.owl-carousel {
+
+    .owl-stage-outer {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      overflow: visible;
+    }
+  }
+
+  .owl-dots {
+    text-align: center;
+    
+    button {
+      height: 10px;
+      width: 10px;
+      background: #d2d2d2;
+      border-radius: 50%;
+      margin-right: 6px;
+
+      &.active {
+        background: #9c9c9c;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

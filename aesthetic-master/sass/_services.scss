@@ -1,0 +1,290 @@
+/*---------------------
+  Services
+-----------------------*/
+.services__title {
+
+    h4 {
+        color: $heading-color;
+        font-weight: 600;
+        margin-bottom: 25px;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+}
+
+.services__accordion {
+    margin-bottom: 60px;
+
+    .accordion {
+        border: 1px solid #eaf4f6;
+        border-radius: 10px;
+        padding-bottom: 15px;
+    }
+
+    .card {
+        border: none;
+
+        &:last-child {
+
+            .card-body {
+                padding-bottom: 0;
+                margin-bottom: 0;
+
+                ul {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .card-heading {
+        padding: 10px 30px;
+        margin-bottom: -6px;
+        cursor: pointer;
+        background: transparent;
+        @include transition(0.2s);
+
+        &.active {
+            background: #f2f7f8;
+
+            a {
+                color: $heading-color;
+                display: block;
+            }
+        }
+
+        a {
+            color: #666666;
+            font-size: 15px;
+        }
+    }
+
+    .card-body {
+        padding: 0 30px;
+        margin-bottom: 12px;
+
+        ul {
+            border-bottom: 1px solid #e1e1e1;
+            padding: 24px 0 18px;
+
+            li {
+                list-style: none;
+
+                a {
+                    font-size: 15px;
+                    color: #666666;
+                    line-height: 32px;
+                    @include transition(all, .3s);
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services__accordion .card-heading a:after,
+.services__accordion .card-heading>a.active[aria-expanded=false]:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 15px;
+    color: $heading-color;
+    position: absolute;
+    right: 28px;
+    top: 11px;
+}
+
+.services__accordion .card-heading.active a:after {
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 15px;
+    color: $heading-color;
+    position: absolute;
+    right: 28px;
+    top: 8px;
+}
+
+.services__accordion .card-heading a[aria-expanded=true]:after,
+.services__accordion .card-heading>a.active:after {
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 15px;
+    font-weight: 400;
+    color: $heading-color;
+    position: absolute;
+    right: 28px;
+    top: 11px;
+}
+
+.services__appoinment {
+
+    form {
+    
+        input {
+        font-size: 15px;
+        color: #666666;
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        border: 1px solid #f2f2f2;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    
+        &::placeholder {
+            color: #666666;
+        }
+    
+        &:focus {
+            border-color: #9d9d9d;
+        }
+        }
+    
+        .datepicker__item {
+        position: relative;
+    
+        i {
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            font-size: 15px;
+            color: #666666;
+        }
+        }
+    
+        .nice-select {
+        float: none;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    
+        &:after {
+            border-bottom: 1.5px solid #666666;
+            border-right: 1.5px solid #666666;
+            height: 8px;
+            right: 20px;
+            top: 46%;
+            width: 8px;
+        }
+    
+        span {
+            font-size: 15px;
+            color: #666666;
+        }
+    
+        &.active, &.open, &:focus {
+            border-color: #666666;
+        }
+    
+        .list {
+            width: 100%;
+            margin-top: 0;
+            border-radius: 5px;
+        }
+        }
+    
+        button {
+        width: 100%;
+        }
+    }
+}
+
+.services__details {
+    padding-left: 30px;
+}
+
+.services__details__title {
+
+    span {
+        font-size: 15px;
+        color: $primary-color;
+    }
+
+    h3 {
+        color: $heading-color;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+}
+
+.services__details__widget {
+    text-align: right;
+
+    .rating {
+
+        i {
+            font-size: 13px;
+            color: #e4c870;
+        }
+
+    }
+
+    h3 {
+        color: $primary-color;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+}
+
+.services__details__pic {
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.services__details__text {
+    margin-bottom: 40px;
+
+    p {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.services__details__item__pic {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    margin-bottom: 15px;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.services__details__desc {
+    margin-top: 12px;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.services__details__feature {
+    margin-bottom: 25px;
+
+    li {
+      list-style: none;
+      font-size: 15px;
+      color: #666666;
+      line-height: 36px;
+
+      i {
+        color: $primary-color;
+        font-size: 15px;
+        margin-right: 6px;
+      }
+    }
+  }
